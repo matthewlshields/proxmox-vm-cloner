@@ -1,0 +1,7 @@
+---
+- name: Prepare a new VM
+  hosts: vms
+  gather_facts: true
+  become: yes
+  roles:
+    - role: base
