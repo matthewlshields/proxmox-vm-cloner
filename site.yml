@@ -1,7 +1,8 @@
 ---
 - name: Prepare a new VM
-  hosts: vms
+  hosts: "*"
   gather_facts: true
-  become: yes
+  become: true
+  remote_user: ansibleuser
   roles:
     - role: base
